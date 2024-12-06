@@ -1,0 +1,38 @@
+1- Go to https://pytorch.org/get-started/locally
+
+2- Select Your Preferences And Run The Install Command or Anaconda Command.
+
+3- Run The Suitable Command.
+
+**IF IT DIDN'T WORK:
+
+1- Open (Conda) Prompt.
+
+2- Then Command this line:
+
+	pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+	pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+
+	conda update conda
+
+****IF IT DIDN'T WORK:
+
+1. Check Available PyTorch Versions:
+
+To find out what GPU versions are available for PyTorch, we can use the PyPI web interface:
+
+    Go to https://pypi.org/search/
+    In the search box, type "torch torchvision torchaudio"
+    Look for entries with CUDA versions in their names or descriptions
+
+2. Check PyTorch GitHub Repository:
+
+For the most up-to-date information on available CUDA versions:
+
+    Go to https://github.com/pytorch/pytorch
+    Look at the latest release notes
+    Check the installation instructions for different CUDA versions
+
+
+

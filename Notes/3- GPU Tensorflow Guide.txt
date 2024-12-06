@@ -1,0 +1,71 @@
+Normal Use:
+
+On Windows:
+
+Method 1: Using pip (Recommanded)
+
+1- Install Python.
+
+2- Upgrade pip:
+
+		pip install --upgrade pip
+
+3- Install TensorFlow:
+
+		pip install tensorflow
+
+3- Verify The Installation:
+
+		python -c "import tensorflow as tf; print(tf.__version__)"
+
+
+Method 2: Using Anaconda
+
+1- Install Anaconda.
+
+2- Create a New Environment:
+
+		conda create -n tf_cuda126 python=3.12
+
+3- Activate The Environment:
+
+		conda activate tf_cuda126
+
+4- Install TensorFlow within The Activated Environment:
+
+		conda install tensorflow
+
+5- Verify The Installation with Python code.
+
+		python -c "import tensorflow as tf; print(tf.__version__)"
+
+
+**But What About GPU?
+
+Watch this Video on youtube:
+
+		https://www.youtube.com/watch?v=GFTlcKzhmoE
+
+1- Go to https://www.tensorflow.org/install/pip#windows-native
+
+2- Read the notes for Windows Native.
+
+3- Open (Conda) Prompt:
+
+		conda create --name tf_cuda126 python=3.10
+		conda activate tf_cuda126
+		conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+		pip install tensorflow==2.10
+
+4- Go to Anaconda Navigator.
+
+5- Select Enviroment on the Left Navbar.
+
+6- Select the tf_cuda126.
+
+7- Install Jupyter Notebook
+
+8- Run a Code that uses tensorflow library:
+
+		import tensorflow as tf
+
